@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" xmlns:wicket="http://wicket.apache.org/">
+	<wicket:head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>WiQuery application</title>
+		
+		<style type="text/css">
+			#selectableWicket .ui-selecting, #selectableAjaxWicket .ui-selecting { background: lightGoldenRodYellow; }
+			#selectableWicket .ui-selected, #selectableAjaxWicket .ui-selected { background: lightCoral; color: white; }
+			#selectableWicket, #selectableAjaxWicket { border: 1px solid black; list-style-type: none; margin: 0; padding: 0; width: 90%; }
+			#selectableWicket li, #selectableAjaxWicket li { margin: 3px; padding: 0.4em; font-size: 1.4em; height: 18px; }
+		</style>
+	</wicket:head>
+	
+	<body>
+		<wicket:extend>
+			<table style="height: 100%; width: 100%;">
+				
+				<tbody>
+					<tr>
+						<td style="width: 50%; border-right: 1px black solid;">
+							<ol wicket:id="selectableWicket">
+								<li wicket:id="listView"><span wicket:id="item"></span></li>
+							</ol>
+						</td>
+						
+						<td style="vertical-align: top;">
+							You have selected without Ajax : <br/>
+							<div id="selectedResult"></div>
+						</td>
+					</tr>
+					
+					<tr>
+						<td colspan="2"><hr /></td>
+					</tr>
+					
+					<tr>
+						<td style="width: 50%; border-right: 1px black solid;">
+							<ol wicket:id="selectableAjaxWicket">
+								<li wicket:id="listAjaxView"><span wicket:id="itemAjax"></span></li>
+							</ol>
+						</td>
+						
+						<td style="vertical-align: top;">
+							You have selected with Ajax : <br/>
+							<div wicket:id="ajaxSelectedResult"></div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</wicket:extend>
+	</body>
+</html>

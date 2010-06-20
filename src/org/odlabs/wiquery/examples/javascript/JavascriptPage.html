@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" xmlns:wicket="http://wicket.apache.org/">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>WiQuery application</title>
+	</head>
+	
+	<body>
+		<wicket:extend>
+			<table style="height: 100%; width: 100%;">
+				<thead>
+		  		 		<tr>
+		  		 			<th style="text-align: center;" colspan="3">Javascript binding</th>
+		  		 		</tr>
+		  		 		<tr>
+		  		 			<th style="text-align: center;" colspan="2">wiQuery coding</th>
+		  		 			<th style="text-align: center;">jQuery generation</th>
+		  		 		</tr>
+		  		 </thead>
+
+		  		 <tbody>
+		  		 		<tr>
+		  		 			<td style="vertical-align: top; width: 125px;">
+		  		 				The Java code must return a  JsQuery or a JsStatement or a JsScope. Available Wicket component : 'component'. 
+		  		 			</td>
+		  		 			<td style="width: 50%; border-right: 1px black solid; text-align:center;">
+		  		 				<form action="#" method="post" wicket:id="jsForm">
+			  		 				<textarea rows="20" cols="50" wicket:id="jsCode">
+			  		 				</textarea>
+			  		 				<br />
+			  		 				
+			  		 				<input type="button" value="Generate" wicket:id="jsSubmit" />
+			  		 				<br />
+			  		 				
+			  		 				<div wicket:id="feedback" style="text-align:left;">
+			  		 				</div>
+		  		 				</form>
+		  		 			</td>
+		  		 			
+		  		 			<td style="padding: 15px; vertical-align: top;">
+		  		 				<pre wicket:id="jsGenerated">
+		  		 				</pre>
+		  		 			</td>
+		  		 		</tr>		  		 		
+		  		 </tbody>
+			</table>
+			
+			<br />
+			
+			<table style="height: 100%; width: 100%;">
+				<thead>
+		  		 		<tr>
+		  		 			<th style="text-align: center;" colspan="2">Available Class and Methods</th>
+		  		 		</tr>
+		  		 </thead>
+
+		  		 <tbody style="padding: 15px; vertical-align: top;">
+		  		 	<tr>
+		  		 		<td style="width: 20%;">
+		  		 			JsStatement :
+		  		 		</td>
+		  		 		
+		  		 		<td>
+		  		 			<ul>
+		  		 				<li>public JsStatement()</li>
+		  		 				<li>public JsStatement $()</li>
+		  		 				<li>public JsStatement $(Component context, String selector)</li>
+		  		 				<li>public JsStatement $(Component context)</li>
+		  		 				<li>public JsStatement document()</li>
+		  		 				<li>public JsStatement self()</li>
+		  		 				<li>public JsStatement append(CharSequence charSequence)</li>
+		  		 				<li>public JsStatement chain(CharSequence statementLabel, CharSequence... statementArgs) </li>
+		  		 				<li>public JsStatement chain(ChainableStatement chainableStatement)</li>
+		  		 				<li>public JsStatement each(JsScope scope)</li>
+		  		 				<li>public JsStatement ready(JsScope scope)</li>
+		  		 				<li>public CharSequence render()</li>
+		  		 			</ul>
+		  		 		</td>
+		  		 	</tr>
+		  		 	
+		  		 	<tr>
+		  		 		<td style="width: 20%;">
+		  		 			JsQuery :
+		  		 		</td>
+		  		 		
+		  		 		<td>
+		  		 			<ul>
+		  		 				<li>public JsQuery()</li>
+		  		 				<li>public JsQuery(Component component)</li>
+		  		 				<li>public JsStatement $()</li>
+		  		 				<li>public JsStatement $(String selector)</li>
+		  		 				<li>public JsStatement document()</li>
+		  		 				<li>public JsStatement getStatement()</li>
+		  		 			</ul>
+		  		 		</td>
+		  		 	</tr>
+		  		 	
+		  		 	<tr>
+		  		 		<td style="width: 20%;">
+		  		 			JsScope :
+		  		 		</td>
+		  		 		
+		  		 		<td>
+		  		 			<ul>
+		  		 				<li>public JsScope(String... scopeParameters)</li>
+		  		 				<li>protected abstract void execute(JsScopeContext scopeContext)</li>
+		  		 				<li>public CharSequence render()</li>
+		  		 				<li>public static JsScope quickScope(CharSequence javascriptCode)</li>
+		  		 			</ul>
+		  		 		</td>
+		  		 	</tr>
+		  		 </tbody>
+	  		 </table>
+		</wicket:extend>
+	</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" xmlns:wicket="http://wicket.apache.org/">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>WiQuery application</title>
+	</head>
+	
+	<body>
+		<wicket:extend>
+			<table style="height: 100%; width: 100%;">
+				<tbody>
+					<tr>
+						<td style="width: 25%;">
+							<form wicket:id="form" action="#" method="post">
+								<span>
+									Date selectable before &amp; after : <input type="text" wicket:id="selectableDate"/>
+								</span>
+								
+								<br />
+								
+								<span>
+									Number of months : <input type="text" wicket:id="numberOfMonths"/>
+								</span>
+								
+								<br />
+								
+								<span>
+									Show button image : <input type="checkbox" wicket:id="showButtonImage"/>
+								</span>
+								
+								<br />
+								
+								<span>
+									Show Button Panel : <input type="checkbox" wicket:id="showButtonPanel" />
+								</span>
+								
+								<br />
+								
+								<input type="button" wicket:id="dateButton" value="Ok" />
+							</form>
+						</td>
+						
+						<td style="border-left: 1px black solid; padding-left:15px;">
+							<div wicket:id="datePanel">
+								<input type="text" wicket:id="datePicker" />
+								
+								<br />
+								
+								<center>
+									<button wicket:id="openDialog">Open DatePicker dialog</button>
+								</center>
+							</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</wicket:extend>
+	</body>
+</html>

@@ -1,0 +1,14 @@
+/* this codeBase will be applied to groovy scripts */
+grant codeBase "file:/serverCodeBase/restrictedClient" {
+  permission java.lang.RuntimePermission "accessDeclaredMembers";
+  permission java.util.logging.LoggingPermission "control";
+  permission java.lang.RuntimePermission "setSecurityManager";
+  permission java.lang.RuntimePermission "getClassLoader";
+  permission groovy.security.GroovyCodeSourcePermission "/groovy/script";
+  permission java.util.PropertyPermission "groovyjarjarantlr.ast", "read";
+  permission java.util.PropertyPermission "groovy.ast", "read";
+};
+
+grant {
+  permission java.security.AllPermission;
+};

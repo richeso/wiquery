@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" xmlns:wicket="http://wicket.apache.org/">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>WiQuery application</title>
+	</head>
+	
+	<body>
+		<wicket:extend>
+			<table style="height: 100%; width: 100%;">
+				<tbody>
+					<tr>
+						<td style="width: 25%;">
+							<span>
+								Revert position : <input type="checkbox" wicket:id="revertPosition" />
+							</span>
+							
+							<br />
+							
+							<span>
+								Containment constraint : <input type="checkbox" wicket:id="containmentConstraint" />
+							</span>
+						</td>
+						
+						<td style="border-left: 1px black solid; padding-left:15px;">
+							<div wicket:id="dragPanel" style="background-color: lightgrey; height: 50px; width: 75px;">
+								Drag me !!
+							</div>
+						</td>
+					</tr>
+					
+					<tr>
+						<td style="width: 25%;">
+							&nbsp;
+						</td>
+						
+						<td style="border-left: 1px black solid; border-top: 1px solid black; padding-left:15px;">
+							<div wicket:id="dragAjaxPanel" style="background-color: lightgreen; height: 50px; width: 75px;">
+								Drag me with Ajax !!
+							</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</wicket:extend>
+	</body>
+</html>

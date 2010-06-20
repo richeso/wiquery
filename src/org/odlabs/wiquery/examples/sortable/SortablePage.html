@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" xmlns:wicket="http://wicket.apache.org/">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>WiQuery application</title>
+	</head>
+	
+	<body>
+		<wicket:extend>
+			<table style="height: 100%; width: 100%;">
+				<thead>
+					<tr>
+						<th style="text-align: center;">First sort list (non-ajax)</th>
+						
+						<th style="text-align: center;">Second sort list (ajax)</th>
+					</tr>
+					
+					<tr>
+						<th colspan="2" style="text-align: center;">
+							You can drop some item in the other sortable list
+						</th>
+					</tr>
+				</thead>
+				
+				<tbody>
+					<tr>
+						<td style="width: 50%; border-right: 1px black solid;">
+							<ul wicket:id="sortableWicket" class="connectedSortable">
+								<li wicket:id="listView"><span wicket:id="item"></span></li>
+							</ul>
+						</td>
+						
+						<td>
+							<ul wicket:id="sortableAjaxWicket" class="connectedSortable">
+								<li wicket:id="listAjaxView"><span wicket:id="itemAjax"></span></li>
+							</ul>  
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</wicket:extend>
+	</body>
+</html>

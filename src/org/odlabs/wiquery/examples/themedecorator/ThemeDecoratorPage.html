@@ -1,0 +1,172 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" xmlns:wicket="http://wicket.apache.org/">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>WiQuery application</title>
+	</head>
+	
+	<wicket:head>
+		<style>
+			td {
+				padding-bottom: 15px;
+			}
+		</style>
+	</wicket:head>
+	
+	<body>
+		<wicket:extend>
+			<table style="height: 100%; width: 100%;">
+				<thead>
+		  		 		<tr>
+		  		 			<th style="text-align: center;">Without jQuery UI theme</th>
+		  		 			<th style="text-align: center;">With jQuery UI Theme</th>
+		  		 		</tr>
+		  		 </thead>
+
+		  		 <tbody>
+		  		 		<tr>
+		  		 			<td style="width: 25%; border-right: 1px black solid;">
+		  		 				<button>
+								   A button
+								</button>
+		  		 			</td>
+		  		 			
+		  		 			<td>
+		  		 				<button wicket:id="buttonCorned">
+								   A button without hover effect
+								</button>
+								<br /><br />
+								<button wicket:id="buttonCornedFocused">
+								   A button without hover effect and focused
+								</button>
+								<br /><br />
+		  		 				<button wicket:id="buttonOver">
+								   A button with hover effect
+								</button>
+		  		 			</td>
+		  		 		</tr>
+		  		 		
+		  		 		<tr>
+		  		 			<td style="width: 25%; border-right: 1px black solid;">
+		  		 				<div style="padding: 0pt 0.7em; -moz-user-select: none;">
+								   A simple div
+								</div>
+		  		 			</td>
+
+		  		 			<td>
+		  		 				<div wicket:id="divTitle" style="padding: 0pt 0.7em; -moz-user-select: none;">
+								   A bar div
+								</div>
+		  		 			</td>
+		  		 		</tr>
+		  		 		
+		  		 		<tr>
+		  		 			<td style="width: 25%; border-right: 1px black solid;">
+		  		 				<div style="padding: 0pt 0.7em;">
+								   	A simple div
+								</div>
+		  		 			</td>
+
+		  		 			<td>
+		  		 				<div wicket:id="divRounded" style="padding: 0pt 0.7em; -moz-user-select: none;">
+								   A rounded div
+								</div>
+		  		 			</td>
+		  		 		</tr>
+		  		 		
+		  		 		<tr>
+		  		 			<td style="width: 25%; border-right: 1px black solid;">
+								<div style="padding: 0pt 0.7em;">
+		  		 				  A highlighted text
+								</div>
+		  		 			</td>
+
+							<td>
+								<div wicket:id="highlightedText" style="padding: 0pt 0.7em;">
+		  		 				  A highlighted text
+								</div>
+		  		 			</td>
+		  		 		</tr>
+		  		 		
+		  		 		<tr>
+		  		 			<td style="width: 25%; border-right: 1px black solid;">
+								<div style="padding: 0pt 0.7em;">
+		  		 				  An alert
+								</div>
+		  		 			</td>
+
+							<td>
+								<div wicket:id="errorText" style="padding: 0pt 0.7em;">
+		  		 				  An alert
+								</div>
+		  		 			</td>
+		  		 		</tr>
+		  		 		
+		  		 		<tr>
+		  		 			<td style="width: 25%; border-right: 1px black solid;">
+								<div style="position:relative;">
+									 <p>Lorem ipsum dolor sit amet, Nulla nec tortor. Donec id elit quis purus consectetur consequat. </p>
+									 <p>Nam congue semper tellus. Sed erat dolor, dapibus sit amet, venenatis ornare, ultrices ut, nisi. Aliquam ante. Suspendisse scelerisque dui nec velit. Duis augue augue, gravida euismod, vulputate ac, facilisis id, sem. Morbi in orci. </p>
+									 <p>Nulla purus lacus, pulvinar vel, malesuada ac, mattis nec, quam. Nam molestie scelerisque quam. Nullam feugiat cursus lacus.orem ipsum dolor sit amet, consectetur adipiscing elit. Donec libero risus, commodo vitae, pharetra mollis, posuere eu, pede. Nulla nec tortor. Donec id elit quis purus consectetur consequat. </p>
+									 <p>Nam congue semper tellus. Sed erat dolor, dapibus sit amet, venenatis ornare, ultrices ut, nisi. Aliquam ante. Suspendisse scelerisque dui nec velit. Duis augue augue, gravida euismod, vulputate ac, facilisis id, sem. Morbi in orci. Nulla purus lacus, pulvinar vel, malesuada ac, mattis nec, quam. Nam molestie scelerisque quam. </p>
+									 <p>Nullam feugiat cursus lacus.orem ipsum dolor sit amet, consectetur adipiscing elit. Donec libero risus, commodo vitae, pharetra mollis, posuere eu, pede. Nulla nec tortor. Donec id elit quis purus consectetur consequat. Nam congue semper tellus. Sed erat dolor, dapibus sit amet, venenatis ornare, ultrices ut, nisi. Aliquam ante. </p>
+									 <p>Suspendisse scelerisque dui nec velit. Duis augue augue, gravida euismod, vulputate ac, facilisis id, sem. Morbi in orci. Nulla purus lacus, pulvinar vel, malesuada ac, mattis nec, quam. Nam molestie scelerisque quam. Nullam feugiat cursus lacus.orem ipsum dolor sit amet, consectetur adipiscing elit. Donec libero risus, commodo vitae, pharetra mollis, posuere eu, pede. Nulla nec tortor. Donec id elit quis purus consectetur consequat.</p>
+									 
+									 <div>
+                                     </div>
+
+									 <div class="ui-widget ui-widget-content ui-corner-all" style="background-color:white; padding: 10px; position: absolute; width: 280px; height: 130px; left: 50px; top: 30px;">
+  									 	  This div will be "overlayded", because the previous empty div has got the required class
+  									 </div>
+								</div>
+		  		 			</td>
+		  		 			
+		  		 			<td style="width: 25%; border-right: 1px black solid;">
+								<div style="position:relative;">
+									 <p>Lorem ipsum dolor sit amet, Nulla nec tortor. Donec id elit quis purus consectetur consequat. </p>
+									 <p>Nam congue semper tellus. Sed erat dolor, dapibus sit amet, venenatis ornare, ultrices ut, nisi. Aliquam ante. Suspendisse scelerisque dui nec velit. Duis augue augue, gravida euismod, vulputate ac, facilisis id, sem. Morbi in orci. </p>
+									 <p>Nulla purus lacus, pulvinar vel, malesuada ac, mattis nec, quam. Nam molestie scelerisque quam. Nullam feugiat cursus lacus.orem ipsum dolor sit amet, consectetur adipiscing elit. Donec libero risus, commodo vitae, pharetra mollis, posuere eu, pede. Nulla nec tortor. Donec id elit quis purus consectetur consequat. </p>
+									 <p>Nam congue semper tellus. Sed erat dolor, dapibus sit amet, venenatis ornare, ultrices ut, nisi. Aliquam ante. Suspendisse scelerisque dui nec velit. Duis augue augue, gravida euismod, vulputate ac, facilisis id, sem. Morbi in orci. Nulla purus lacus, pulvinar vel, malesuada ac, mattis nec, quam. Nam molestie scelerisque quam. </p>
+									 <p>Nullam feugiat cursus lacus.orem ipsum dolor sit amet, consectetur adipiscing elit. Donec libero risus, commodo vitae, pharetra mollis, posuere eu, pede. Nulla nec tortor. Donec id elit quis purus consectetur consequat. Nam congue semper tellus. Sed erat dolor, dapibus sit amet, venenatis ornare, ultrices ut, nisi. Aliquam ante. </p>
+									 <p>Suspendisse scelerisque dui nec velit. Duis augue augue, gravida euismod, vulputate ac, facilisis id, sem. Morbi in orci. Nulla purus lacus, pulvinar vel, malesuada ac, mattis nec, quam. Nam molestie scelerisque quam. Nullam feugiat cursus lacus.orem ipsum dolor sit amet, consectetur adipiscing elit. Donec libero risus, commodo vitae, pharetra mollis, posuere eu, pede. Nulla nec tortor. Donec id elit quis purus consectetur consequat.</p>
+									 
+									 <div wicket:id="overlay">
+                                     </div>
+
+									 <div class="ui-widget ui-widget-content ui-corner-all" style="background-color:white; padding: 10px; position: absolute; width: 280px; height: 130px; left: 50px; top: 30px;">
+  									 	  This div will be "overlayded", because the previous empty div has got the required class
+  									 </div>
+								</div>
+		  		 			</td>
+		  		 		</tr>
+
+		  		 		<tr>
+		  		 			<td style="width: 25%; border-right: 1px black solid;">
+								<span>
+		  		 				  Give me a closethick please.
+								</span>
+		  		 			</td>
+
+							<td>
+								<span wicket:id="closethick">
+								</span>
+		  		 			</td>
+		  		 		</tr>
+		  		 		
+		  		 		<tr>
+		  		 			<td style="width: 25%; border-right: 1px black solid;">
+								<span>
+		  		 				  Give me a calendar please.
+								</span>
+		  		 			</td>
+
+							<td>
+								<span wicket:id="calendar">
+								</span>
+		  		 			</td>
+		  		 		</tr>
+		  		 </tbody>
+			</table>
+		</wicket:extend>
+	</body>
+</html>

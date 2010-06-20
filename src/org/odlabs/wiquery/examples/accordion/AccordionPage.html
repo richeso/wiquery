@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" xmlns:wicket="http://wicket.apache.org/">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>WiQuery application</title>
+	</head>
+	
+	<body>
+		<wicket:extend>
+			<table style="height: 400px; width: 100%;">
+				<tbody>
+					<tr>
+						<td style="width: 25%;">
+							<span>
+								No auto height : <input type="checkbox" wicket:id="autoHeight"/>
+							</span>
+							
+							<br />
+						</td>
+						
+						<td style="border-left: 1px black solid; padding-left:15px;">
+							<div wicket:id="accordion">
+								<h3><a href="#">Section 1</a></h3>
+								<div>
+									<p>Mauris mauris ante, blandit et, ultrices a, susceros. Nam mi. Proin viverra leo ut odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.</p>
+								</div>
+								<h3><a href="#">Section 2</a></h3>
+								<div>
+									<p>Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In suscipit faucibus urna. </p>
+								</div>
+								<h3><a href="#">Section 3</a></h3>
+								<div>
+									<p>Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis. Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui. </p>
+									<ul>
+										<li>List item</li>
+										<li>List item</li>
+										<li>List item</li>
+										<li>List item</li>
+										<li>List item</li>
+										<li>List item</li>
+										<li>List item</li>
+									</ul>
+								</div>
+							</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</wicket:extend>
+	</body>
+</html>
